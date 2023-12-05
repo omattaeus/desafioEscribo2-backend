@@ -2,12 +2,11 @@
   "name": "desafioescribo2",
   "version": "1.0.0",
   "description": "",
-  "main": ".../app/index.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha",
-    "dev": "nodemon index.js",
-    "prestart": "next build",
-    "start": "next start -p ${PORT}"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",

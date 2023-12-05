@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const uuid = require('uuid');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const SECRET_KEY = 'testando123';
 
 const users = [];
