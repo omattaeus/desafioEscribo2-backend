@@ -4,6 +4,11 @@ steps:
   
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
-  
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy']
+
+options:
+  build:
+    service_account: desafio-back-end-407208@appspot.gserviceaccount.com .iam.gserviceaccount.com
+    default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
+
+substitutions:
+  _BUCKET_NAME: desafiobackend1
