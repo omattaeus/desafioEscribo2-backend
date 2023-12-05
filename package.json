@@ -2,7 +2,7 @@
   "name": "desafioescribo2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./app/index",
   "scripts": {
     "start": "nodemon",
     "production": "pm2 start index.js --name appx-backend2",
