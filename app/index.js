@@ -6,7 +6,7 @@ const uuid = require('uuid');
 
 const app = express();
 const PORT = 5000;
-const SECRET_KEY = 'suaChaveSecreta';
+const SECRET_KEY = 'testando123';
 
 const users = [];
 
