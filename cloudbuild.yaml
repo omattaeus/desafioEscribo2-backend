@@ -9,5 +9,7 @@ steps:
   args: ['build', '-t', 'gcr.io/$desafio-escribo-407209 /my-app', '.']
 
 images:
-- 'gcr.io/$desafio-escribo-407209 /my-app'
+- 'gcr.io/$desafio-escribo-407209/my-app'
+steps:
+
 
