@@ -1,6 +1,6 @@
 const chai = require('chai');
 const supertest = require('supertest');
-const app = require('index');
+const app = require('..app/index.js');
 
 const expect = chai.expect;
 const request = supertest(app);
