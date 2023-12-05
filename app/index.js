@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const uuid = require('uuid');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const SECRET_KEY = 'testando123';
 
 const users = [];
@@ -20,6 +20,10 @@ const authenticateToken = (req, res, next) => {
     next();
   });
 };
+
+app.get("/", function (req, res){
+  res.send("Olá, Mundo!")
+})
 
 app.post('/signup', (req, res) => {
   const { nome, email, senha, telefone } = req.body;

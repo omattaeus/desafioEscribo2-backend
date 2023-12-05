@@ -4,7 +4,7 @@
   "description": "",
   "main": "./app/index",
   "scripts": {
-    "start": "nodemon",
+    "start": "node index",
     "production": "pm2 start index.js --name appx-backend2",
     "test": "mocha"
   },
