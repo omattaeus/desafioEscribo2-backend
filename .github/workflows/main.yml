@@ -17,3 +17,4 @@ jobs:
         server: ftp.samkirkland.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_senha }}
+        args: --debug
