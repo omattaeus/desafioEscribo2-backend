@@ -4,8 +4,7 @@
   "description": "",
   "main": "./app/index",
   "scripts": {
-    "start": "node index",
-    "production": "pm2 start index.js --name appx-backend2",
+    "start": "node index.js",
     "test": "mocha"
   },
   "keywords": [],
