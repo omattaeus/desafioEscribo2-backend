@@ -4,9 +4,10 @@
   "description": "",
   "main": ".../app/index.js",
   "scripts": {
-    "start": "node index.js",
     "test": "mocha",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "prestart": "next build",
+    "start": "next start -p ${PORT}"
   },
   "keywords": [],
   "author": "",
