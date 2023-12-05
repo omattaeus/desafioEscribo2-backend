@@ -4,3 +4,10 @@ steps:
 
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$desafio-escribo-407209 /my-app', '.']
+
+images:
+- 'gcr.io/$desafio-escribo-407209 /my-app'
+
